@@ -322,7 +322,7 @@ footer { text-align: center; padding: 40px 48px; font-size: 13px; color: var(--m
   <h2 class="anim">Let's build something.</h2>
   <p class="anim anim-delay-1">Open to PM, Senior PM, and Group PM roles.</p>
   <div class="contact-links anim anim-delay-2">
-    <a href="/cdn-cgi/l/email-protection#1c72797b752f2d32777d6e68757779657d5c7b717d7570327f7371" class="primary">✉ Email Me</a>
+    <a href="mailto:negi31.kartikeya@gmail.com" class="primary">✉ Email Me</a>
     <a href="https://www.linkedin.com/in/kartikeya-negi3105/" target="_blank" rel="noopener noreferrer">in LinkedIn</a>
     <a href="https://github.com/negi31-kartikeya" target="_blank" rel="noopener noreferrer">⌥ GitHub</a>
     <a href="tel:+919619056820">📞 +91-9619056820</a>
@@ -331,6 +331,11 @@ footer { text-align: center; padding: 40px 48px; font-size: 13px; color: var(--m
 
 <footer><p>Kartikeya Negi · Gurugram, India · 2026</p></footer>
 
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+<script>
 const observer = new IntersectionObserver((entries) => {
-  entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); const line = e.target.querySelector('.section-line'); if (line) lin
+  entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); const line = e.target.querySelector('.section-line'); if (line) line.classList.add('visible'); } });
+}, { threshold: 0.15 });
+document.querySelectorAll('.anim').forEach(el => observer.observe(el));
+</script>
+</body>
+</html>
